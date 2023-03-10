@@ -1,0 +1,26 @@
+if(i%2==0)
+			{
+				System.out.println("\n" + player1.name + ", your turn.");
+				System.out.print("Choose a pattern in the board: ");
+				String m = move.next();
+				if(mtx.isPicked(m) == false)
+				{
+					System.out.println("Error");
+					i++;
+					mtx.printMatrix();
+				}else{
+					gameFlow(mtx,player1,m);
+				}
+			}else{
+				System.out.println("\n" + player2.name + ", your turn.");
+				System.out.print("Choose a pattern in the board: ");
+				String m = move.next();
+				if(mtx.isPicked(m) == false)
+				{
+					System.out.println("Error");
+					i++;
+					mtx.printMatrix();
+				}else{
+					gameFlow(mtx,player2,m);
+				}
+			}

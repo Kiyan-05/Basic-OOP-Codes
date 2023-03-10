@@ -1,0 +1,46 @@
+
+1. Class for Matrix of numbers
+2. Note: 9 is the max rounds, 7 is the least, and 5 is the minimum rounds
+3. make function, isWin: to check if the min round pick is aligned straight/diagonal
+4. function/class for Player
+5. 2D Array = coordinates of numbers -> Number class
+
+
+Note: if the num is picked (isPicked), return invalid and retry turn
+
+if 5/7 (iteration) -> isWin (check matrix and player) - must not override 
+if 9 -> default print -> Draw
+
+Player 1 = X
+Player 2 = O
+
+
+Data Type = String
+
+
+[0][0] = 1
+[0][1] = 2
+[0][2] = 3
+[1][0] = 4
+[1][1] = 5
+[1][2] = 6 
+[2][0] = 7
+[2][1] = 8
+[2][2] = 9
+
+1. Players Turn = 9 max turns
+2. Enter chosen number (1-9)
+3. check if valid number (compare the value in the number array)
+4. Store or pass the value (coordinates)
+4. print matrix with replaced string
+
+Last Function
+Error: Invalid position. Please choose a position not marked an 'X' or 'O'.
+
+
+
+
+
+X O X
+X O O
+O X X
