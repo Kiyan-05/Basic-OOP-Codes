@@ -2,7 +2,7 @@ class Customer
 {
 	public String name;
 	public Cart userCart;
-	//public Order customerOrder;
+	public double currentBalance;
 
 	public Customer()
 	{
@@ -14,8 +14,14 @@ class Customer
 	public Customer(String name, Cart c)
 	{
 		this.name = name;
-		//this.customerOrder = this.o;
 		this.userCart = c;
+	}
+
+	public Customer(Customer c, double amount)
+	{
+		this.name = c.name;
+		this.userCart = c.userCart;
+		this.currentBalance = amount;
 	}
 
 	@Override

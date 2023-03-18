@@ -32,6 +32,6 @@ class Product
 	@Override
 	public String toString()
 	{
-		return ("Product: " + this.name);
+		return ("Product: " + this.name + " -- " + this.price + " each.");
 	}
 }
