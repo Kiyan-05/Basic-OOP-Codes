@@ -6,13 +6,10 @@ class Matrix
 
 	public Matrix()
 	{
-		this.numbers = new String[3][3];
-		String[][] num = {
-			{"1","2","3"},
-			{"4","5","6"},
-			{"7","8","9"}
-		};
-		this.numbers = num;
+		this.numbers = new String[3][];
+		this.numbers[0] = new String[]{"1","2","3"};
+		this.numbers[1] = new String[]{"4","5","6"};
+		this.numbers[2] = new String[]{"7","8","9"};
 	}
 
 	public void printMatrix()
