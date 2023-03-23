@@ -1,0 +1,46 @@
+Airline
+Seat
++2D Array seats
+
+Passenger
+
+
+1. Display 2d array of seats
+2. Ask Passenger what seat
+	- Check if valid seat or occupied seat
+3. Ask Passenger if he wants another seat (Loop)
+
+
+Airline
++name: String
++planes: List<Airplane> 
++contactNumber: String
+
+Airplane
++name: String
++seats: Seats[][]
+
+Seat
++seatNumber: String
+-------------------
+
+
+Passenger
++name: String
++chosenSeats: String[] - store chosen seats
+
+(Put the scanner value into the array, then compare the new input from the array of chosenSeats from the passenger
+
+
+1. Display seats available
+2. Passenger will pick a seat
+	- Is the seat occupied?
+		if true
+			passenger will occupy/reserve the seat
+		if false
+			passenger will input again
+3. Ask passenger if he will choose a seat again
+	- if yes
+		Go to number 2
+	- if no
+		end program
