@@ -5,16 +5,18 @@ Seat
 Passenger
 
 
-1. Display 2d array of seats
-2. Ask Passenger what seat
-	- Check if valid seat or occupied seat
-3. Ask Passenger if he wants another seat (Loop)
+1. Display a 2d array of seats
+2. Ask the Passenger what seat
+	- Check if the seat is valid or if he occupied the seat
+3. Ask the Passenger if he wants another seat (Loop)
 
 
 Airline
-+name: String
++name: StringJoshauidaskjdqadhd
 +planes: List<Airplane> 
 +contactNumber: String
+----------------------
+
 
 Airplane
 +name: String

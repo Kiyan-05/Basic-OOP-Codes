@@ -20,19 +20,19 @@ public class Airplane
 		for(int i=0; i<this.seats.length; i++)
 		{
 			for(int j=0; j<this.seats[i].length; j++)
-				if(this.seats[Integer.parseInt(String.valueOf(passenger.chosenSeat.charAt(0)))-1][passenger.chosenSeat.charAt(1)-'A'] == this.seats[i][j])
+				if (this.seats[Integer.parseInt(String.valueOf(passenger.chosenSeat.charAt(0)))-1][passenger.chosenSeat.charAt(1)-'A'].passenger == null && this.seats[Integer.parseInt(String.valueOf(passenger.chosenSeat.charAt(0)))-1][passenger.chosenSeat.charAt(1)-'A'] == this.seats[i][j])
 					this.seats[i][j] = new Seat(passenger.seatValue);
 		}
 	}
 
 	public boolean isSeatChosen(Passenger passenger)
 	{
-		boolean pick = true;
+		boolean pick = false;
 		for(int i=0; i<this.seats.length; i++)
 		{
 			for(int j=0; j<this.seats[i].length; j++)
-				if(this.seats[Integer.parseInt(String.valueOf(passenger.chosenSeat.charAt(0)))-1][passenger.chosenSeat.charAt(1)-'A'] == this.seats[i][j])
-					pick = false;
+				if(passenger.chosenSeat.equals(passenger.reservedSeats[i][j]))
+					pick = true;
 		}
 		return pick;
 	}

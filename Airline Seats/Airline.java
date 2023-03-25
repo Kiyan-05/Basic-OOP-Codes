@@ -22,16 +22,4 @@ public class Airline
 	{
 		this.planes.remove(p);
 	}
-
-	/*public boolean isSeatChosen(Airplane plane, Passenger passenger)
-	{
-		boolean pick = true;
-		for(Seat[] i : plane.seats)
-		{
-			for(Seat e : i)
-				if(passenger.chosenSeat.equals(e))
-					pick = false;
-		}
-		return pick;
-	}*/
 }
