@@ -28,14 +28,19 @@ public class AirlineSeats
 			}
 			else
 			{
-				plane1.choosenSeat(user1);
-				seat.addPassengerSeat(user1,ctr);
-				System.out.println(plane1);
-				//System.out.println(user1.chosenSeat);
-				//System.out.println(user1);
-				System.out.print("Get another seat? [y|n]");
-				vr = yn.next().charAt(0);
-				ctr++;
+				if(plane1.isSeatValid(user1))
+				{	
+					plane1.choosenSeat(user1);
+					seat.addPassengerSeat(user1,ctr);
+					System.out.println(plane1);
+					System.out.print("Get another seat? [y|n]");
+					vr = yn.next().charAt(0);
+					ctr++;
+				}
+				else
+				{
+					System.out.println("Error: Invalid input. (Range is 1A-7D.)");
+				}
 			}
 		}
 	}
