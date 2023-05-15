@@ -64,5 +64,4 @@ class Matrix
 		}
 		return (h || v || d1 || d2)? true : false;
 	}
-
 }

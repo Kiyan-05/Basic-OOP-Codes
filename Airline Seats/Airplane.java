@@ -29,7 +29,7 @@ public class Airplane
 	{
 		boolean res = true;
 		String[] val = passenger.chosenSeat.split("",2);
-		if(this.seats[Integer.parseInt(String.valueOf(passenger.chosenSeat.charAt(0)))-8][passenger.chosenSeat.charAt(1)-'E'] == val[0][1])
+		if(this.seats[Integer.parseInt(String.valueOf(passenger.chosenSeat.charAt(0)))-8][passenger.chosenSeat.charAt(1)-'E'] == val[0])
 			res = false;
 		return res;
 	}

@@ -13,7 +13,7 @@ public class Quiz
 		this.answers = new char[correct_answers.length];
 		for(int i=0; i<this.answers.length; i++)
 			this.answers[i] = ' ';
-		this.correct_answers =Arrays.copyOfRange(correct_answers,0,correct_answers.length);
+		this.correct_answers = Arrays.copyOfRange(correct_answers,0,correct_answers.length);
 		this.score = 0;
 	}
 

@@ -1,0 +1,20 @@
+super.attribute
+super.method()
+super()-- constructor
+
+
+
+if using protected
+sample:
+
+protected String name
+======
+super.name = name;
+
+
+
+
+
+To access method not coming from parent class
+if(p instanceOf SubClass)
+	System.out.println(((SubClass)p)p.getMethod());
