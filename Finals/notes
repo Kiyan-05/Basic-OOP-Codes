@@ -18,3 +18,12 @@ super.name = name;
 To access method not coming from parent class
 if(p instanceOf SubClass)
 	System.out.println(((SubClass)p)p.getMethod());
+
+
+
+Abstract
+---------
+Cant do "new" on an abstract class because you can't instantiate objects with abstract classes
+
+if the non-abstract class is inheriting an abstract class and has an abstract method, it should be Overrided
+if the abstract class is inheriting an abstract class and has an abstract method, it is not required to override it but if it is overrided, the non-abstract that is inheriting that abstract class, so there's no need to override it

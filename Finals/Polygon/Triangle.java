@@ -16,7 +16,7 @@ public class Triangle extends Polygon
 		{
 			for(int j=i+1; j<vertices.size(); j++)
 			{
-				if(vertices.get(i).equals(vertices.get(j))
+				if(vertices.get(i).equals(vertices.get(j)))
 					ctr++;
 			}
 		}
@@ -32,12 +32,13 @@ public class Triangle extends Polygon
 	{
 		super(p1,p2,p3);
 
+		ArrayList<Point> vertices = super.getVertices();
 		int ctr = 0;
 		for(int i=0; i<vertices.size(); i++)
 		{
 			for(int j=i+1; j<vertices.size(); j++)
 			{
-				if(vertices.get(i).equals(vertices.get(j))
+				if(vertices.get(i).equals(vertices.get(j)))
 					ctr++;
 			}
 		}
