@@ -4,7 +4,7 @@ super()-- constructor
 
 
 
-if using protected
+if using protected/public
 sample:
 
 protected String name
